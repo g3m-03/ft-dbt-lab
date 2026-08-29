@@ -1,0 +1,10 @@
+name: 'ftprobe'
+version: '1.0.0'
+config-version: 2
+profile: 'ftprobe'
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target","dbt_packages"]
+models:
+  ftprobe:
+    +materialized: table
